@@ -25,14 +25,14 @@
     /* identical to box height */
     float: right;
     margin-top: 30px;
-    transition: 500ms;
+    transition: 500ms ease-in-out;
     color: #FFFFFF;
 }
 .header-container_item_button:hover{
     background-color: transparent;
     border: 1px solid #0058DC;
     border-radius: 10px;
-    transition: 500ms;
+    transition: 500ms ease-in-out;
 }
 /*ABOUT*/
 .about{
@@ -88,6 +88,7 @@
 }
 .about__content_text > span{
     text-decoration: underline;
+    color: #FFFFFF;
 }
 /*.about-container{*/
 /*    background-image: url("../images/about/background.jpg");*/
@@ -135,7 +136,7 @@ body{
 }
 body{
     /*overflow: hidden;*/
-    height: 5000px;
+    /*height: 5000px;*/
 }
 .main{
     /*position: relative;*/
@@ -154,7 +155,7 @@ body{
     /*background-color: #fff;*/
     /*border-radius: 50%;*/
     animation-name: left-item;
-    animation-duration: 30s;
+    animation-duration: 40s;
     /*animation-timing-function: linear;*/
     animation-iteration-count: infinite;
     animation-direction: alternate-reverse;
@@ -167,7 +168,7 @@ body{
     /*background-color: #fff;*/
     /*border-radius: 50%;*/
     animation-name: left-item;
-    animation-duration: 30s;
+    animation-duration: 40s;
     /*animation-timing-function: linear;*/
     animation-iteration-count: infinite;
     animation-direction: alternate-reverse;
@@ -242,11 +243,109 @@ body{
     /*background-color: yellow;*/
 }
 
-.slick-slide {
-    transition: 0.5s opacity linear;
+/*.slick-slide {*/
+/*    transition: 0.5s opacity linear;*/
+/*}*/
+/*.slick-slider-opacity {*/
+/*    opacity: 0.5;*/
+/*}*/
+.slider__item{
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    transition: 500ms ease;
 }
-.slick-slider-opacity {
-    opacity: 0.5;
+
+.item-1{
+    background-image: url("../images/skills/html5.png");
+}
+.item-2{
+    background-image: url("../images/skills/php.png");
+}
+.item-3{
+    background-image: url("../images/skills/webstorm.png");
+}
+.item-4{
+    background-image: url("../images/skills/scss.png");
+}
+.item-5{
+    background-image: url("../images/skills/jquery.png");
+}
+.item-6{
+    background-image: url("../images/skills/github.png");
+}
+.item-7{
+    background-image: url("../images/skills/saas.png");
+}
+.item-8{
+    background-image: url("../images/skills/javascript.png");
+}
+.item-9{
+    background-image: url("../images/skills/scss.png");
+}
+.item-10{
+    background-image: url("../images/skills/gulp.png");
+}
+.item-11{
+    background-image: url("../images/skills/vscode.png");
+}
+.item-12{
+    background-image: url("../images/skills/figma.png");
+}
+.item-13{
+    background-image: url("../images/skills/photoshop.png");
+}
+.item-1:hover{
+    background-image: url("../images/skills/active/html5.png");
+    transition: 500ms ease;
+}
+.item-2:hover{
+    background-image: url("../images/skills/active/php.png");
+    transition: 500ms ease;
+}
+.item-3:hover{
+    background-image: url("../images/skills/active/webstorm.png");
+    transition: 500ms ease;
+}
+.item-4:hover{
+    background-image: url("../images/skills/active/scss.png");
+    transition: 500ms ease;
+}
+.item-5:hover{
+    background-image: url("../images/skills/active/jquery.png");
+    transition: 500ms ease;
+}
+.item-6:hover{
+    background-image: url("../images/skills/active/github.png");
+    transition: 500ms ease;
+}
+.item-7:hover{
+    background-image: url("../images/skills/active/saas.png");
+    transition: 500ms ease;
+}
+.item-8:hover{
+    background-image: url("../images/skills/active/javascript.png");
+    transition: 500ms ease;
+}
+.item-9:hover{
+    background-image: url("../images/skills/active/scss.png");
+    transition: 500ms ease;
+}
+.item-10:hover{
+    background-image: url("../images/skills/active/gulp.png");
+    transition: 500ms ease;
+}
+.item-11:hover{
+    background-image: url("../images/skills/active/vscode.png");
+    transition: 500ms ease;
+}
+.item-12:hover{
+    background-image: url("../images/skills/active/figma.png");
+    transition: 500ms ease;
+}
+.item-13:hover{
+    background-image: url("../images/skills/active/photoshop.png");
+    transition: 500ms ease;
 }
 
 
@@ -260,35 +359,34 @@ body{
 
 
 
+/*@keyframes white-circle {*/
+/*    0%{*/
 
-@keyframes white-circle {
-    0%{
-
-    }
-    100%{
-        transform: rotate(180deg);
-    }
-}
-.main_animation{
-    /*width: 100px;*/
-    /*height: 100px;*/
-    /*background-color: #fff;*/
-    /*border-radius: 50%;*/
-    animation-name: white-circle;
-    animation-duration: 11s;
-    /*animation-timing-function: linear;*/
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    /*animation-delay: 2s;*/
-}
-.animation{
-    position: absolute;
-    right: -650px;
-}
-.animation{
-    animation-name: white-circle;
-    animation-duration: 11s;
-    /*animation-timing-function: linear;*/
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
+/*    }*/
+/*    100%{*/
+/*        transform: rotate(180deg);*/
+/*    }*/
+/*}*/
+/*.main_animation{*/
+/*    !*width: 100px;*!*/
+/*    !*height: 100px;*!*/
+/*    !*background-color: #fff;*!*/
+/*    !*border-radius: 50%;*!*/
+/*    animation-name: white-circle;*/
+/*    animation-duration: 11s;*/
+/*    !*animation-timing-function: linear;*!*/
+/*    animation-iteration-count: infinite;*/
+/*    animation-direction: alternate;*/
+/*    !*animation-delay: 2s;*!*/
+/*}*/
+/*.animation{*/
+/*    position: absolute;*/
+/*    right: -650px;*/
+/*}*/
+/*.animation{*/
+/*    animation-name: white-circle;*/
+/*    animation-duration: 11s;*/
+/*    !*animation-timing-function: linear;*!*/
+/*    animation-iteration-count: infinite;*/
+/*    animation-direction: alternate;*/
+/*}*/
